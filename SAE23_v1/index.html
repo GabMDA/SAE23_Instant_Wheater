@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Météo Instantanée</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Météo Instantanée</h1>
+    
+    <form id="weather-form">
+      <label for="zipcode">Code postal :</label>
+      <input type="text" id="zipcode" required pattern="\d{5}" placeholder="Ex: 75000">
+      
+      <label for="days">Prévision sur :</label>
+      <select id="days">
+        <option value="1">1 jour</option>
+        <option value="2">2 jours</option>
+        <option value="3">3 jours</option>
+        <option value="4">4 jours</option>
+        <option value="5">5 jours</option>
+        <option value="6">6 jours</option>
+        <option value="7">7 jours</option>
+      </select>
+
+      <button type="submit">Voir la météo</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
