@@ -2,7 +2,7 @@
 
 ## Descriptif 
 
-Instant Wheather est une site web permettant de connaitre les conditions météorologique d'une commune choisis à l'aide d'un code postale.
+Instant Wheather est une site web permettant de connaitre les conditions météorologique d'une commune choisis à l'aide d'un code postale.  
 Pour cela j'ai utilisé les API suivantes : 
 - [Decoupage administratif par commune](https://geo.api.gouv.fr/decoupage-administratif/communes)
 - [MétéoConcept](https://api.meteo-concept.com/)
@@ -21,11 +21,11 @@ Ce site est passé au validateur W3C validator.
 
 ## Mode d'emploi
 
-Il vous suffit d'entrer votre code postale composé de 5 chiffres dans la barre de recherche. 
-Choississez votre une commune dans le menu déroulant. 
-Choississez le jour que vous souhaitez voir, par exemple si vous souhaitez voir le jour 2, 3 et 4, cliquez sur les cases "Jour 2","Jour 3","Jour 4".
-Choississez également des informations supplémentaires tels que la longitude, la latitude, la direction du vent, le vent moyen et le cumule de pluie.
-Pour finir cliquer sur le bouton "Afficher la météo"
+Il vous suffit d'entrer votre code postale composé de 5 chiffres dans la barre de recherche.  
+Choississez votre une commune dans le menu déroulant.  
+Choississez le jour que vous souhaitez voir, par exemple si vous souhaitez voir le jour 2, 3 et 4, cliquez sur les cases "Jour 2","Jour 3","Jour 4".  
+Choississez également des informations supplémentaires tels que la longitude, la latitude, la direction du vent, le vent moyen et le cumule de pluie.  
+Pour finir cliquer sur le bouton "Afficher la météo". 
 
 ## Auteur 
 
