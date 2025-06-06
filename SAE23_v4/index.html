@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instant Weather</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Recherche Météo</h1>
+
+    <form id="weather-form">
+      <label for="zipcode">Code postal :</label>
+      <input type="text" id="zipcode" name="zipcode" placeholder="Ex : 75000" required pattern="\d{5}" />
+
+      <label for="commune">Commune :</label>
+      <select id="commune" name="commune" required>
+        <option value="">Sélectionner une commune</option>
+      </select>
+
+      <label>Jours :</label>
+      <div id="days" class="day-selector">
+        <button type="button" data-day="1">Jour 1</button>
+        <button type="button" data-day="2">Jour 2</button>
+        <button type="button" data-day="3">Jour 3</button>
+        <button type="button" data-day="4">Jour 4</button>
+        <button type="button" data-day="5">Jour 5</button>
+        <button type="button" data-day="6">Jour 6</button>
+        <button type="button" data-day="7">Jour 7</button>
+      </div>
+
+      <fieldset>
+        <legend>Afficher aussi :</legend>
+
+        <div class="switch-label">
+          <span>Latitude</span>
+          <label class="switch">
+            <input type="checkbox" name="options" value="lat" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="switch-label">
+          <span>Longitude</span>
+          <label class="switch">
+            <input type="checkbox" name="options" value="lon" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="switch-label">
+          <span>Cumul pluie</span>
+          <label class="switch">
+            <input type="checkbox" name="options" value="rain" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="switch-label">
+          <span>Vent moyen</span>
+          <label class="switch">
+            <input type="checkbox" name="options" value="wind" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="switch-label">
+          <span>Direction du vent</span>
+          <label class="switch">
+            <input type="checkbox" name="options" value="winddir" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Afficher la météo</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+</body>
+</html>
